@@ -1,14 +1,14 @@
-# [This Plugin Name] 
+# hello-allso 
 
-[This plugin description]
+Say hello allso. and forget hello dolly
 
 ## Plugin repository
-* https://github.com/peroks/wp-plugin-template
+* https://github.com/quickdesigner/hello-allso
 
 ## Authors
-* [Per Egil Roksvaag](https://codeable.io/developers/per-egil-roksvaag/)
+* [Quickdesigner](https://allso.network)
 
 ## Changelog
 
-### Version 0.1.0 / year-month-day
+### Version 0.1.0 / 2022-02-20
 * Initial commit
