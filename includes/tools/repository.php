@@ -8,7 +8,7 @@
  * @see https://www.smashingmagazine.com/2015/08/deploy-wordpress-plugins-with-github-using-transients/
  * @see http://www.matthewray.com/
  *
- * @author Per Egil Roksvaag
+ * @author quickdesigner
  */
 class Repository
 {

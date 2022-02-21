@@ -2,7 +2,7 @@
 /**
  * Displays input fields and forms.
  *
- * @author Per Egil Roksvaag
+ * @author quickdesigner
  */
 class Form
 {

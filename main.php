@@ -20,7 +20,7 @@
 /**
  * The Hello allso plugin main class.
  *
- * @author Per Egil Roksvaag
+ * @author quickdesigner
  * @version 0.1.0
  */
 class Main

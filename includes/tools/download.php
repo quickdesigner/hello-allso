@@ -7,7 +7,7 @@ use ZipArchive;
 /**
  * The Plugin admin settings page.
  *
- * @author Per Egil Roksvaag
+ * @author quickdesigner
  */
 class Download
 {

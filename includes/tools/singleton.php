@@ -2,7 +2,7 @@
 /**
  * Implements the singleton pattern.
  *
- * @author Per Egil Roksvaag
+ * @author quickdesigner
  */
 trait Singleton
 {

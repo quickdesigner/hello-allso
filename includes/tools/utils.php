@@ -3,7 +3,7 @@
 /**
  * Misc utility and helper functions.
  *
- * @author Per Egil Roksvaag
+ * @author quickdesigner
  * @method static Utils instance() Gets the singleton class instance
  */
 class Utils

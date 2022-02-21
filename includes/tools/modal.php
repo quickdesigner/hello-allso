@@ -2,7 +2,7 @@
 /**
  * Creates modal dialogs.
  *
- * @author Per Egil Roksvaag
+ * @author quickdesigner
  */
 class Modal
 {

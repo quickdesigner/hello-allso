@@ -4,7 +4,7 @@
  *
  * Enqueues styles and scripts, enables stylesheet inlining and JavaScript defer / async.
  *
- * @author Per Egil Roksvaag
+ * @author quickdesigner
  */
 class Asset
 {

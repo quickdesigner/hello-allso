@@ -2,7 +2,7 @@
 /**
  * Plugin setup.
  *
- * @author Per Egil Roksvaag
+ * @author quickdesigner
  */
 class Setup
 {
