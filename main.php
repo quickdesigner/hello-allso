@@ -7,7 +7,7 @@
  * Text Domain:       hello-allso
  * Domain Path:       /languages
  *
- * Author:            Per Egil Roksvaag
+ * Author:            quickdesigner
  * Author URI:        https://codeable.io/developers/per-egil-roksvaag/
  *
  * Version:           0.1.0
