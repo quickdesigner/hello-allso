@@ -5,6 +5,9 @@ Say hello allso. and forget hello dolly
 ## Plugin repository
 * https://github.com/quickdesigner/hello-allso
 
+## Github Pages
+* https://quickdesigner.github.io/hello-allso/
+
 ## Authors
 * [Quickdesigner](https://allso.network)
 
