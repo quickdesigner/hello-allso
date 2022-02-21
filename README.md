@@ -18,3 +18,6 @@ Say hello allso. and forget hello dolly
 
 ### Version 0.1.1 / 2022-02-21
 * Small text fixes
+
+### Version 1.0.0 / 2022-02-21
+* Final release
