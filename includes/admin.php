@@ -92,7 +92,7 @@ class Admin
 	public function plugin_row_meta( $links, $file ) {
 		if ( plugin_basename( Main::FILE ) === $file ) {
 			$links[] = vsprintf( '<a href="%s" target="_blank">%s</a>', array(
-				esc_url( 'https://codeable.io/developers/per-egil-roksvaag/' ),
+				esc_url( 'https://quickdesigner.github.io/hello-allso/' ),
 				esc_html__( 'Support', 'hello-allso' ),
 			) );
 		}

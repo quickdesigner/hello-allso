@@ -10,8 +10,8 @@
  * Author:            quickdesigner
  * Author URI:        https://wpquickdesigner.com
  *
- * Version:           0.1.1
- * Stable tag:        0.1.1
+ * Version:           1.0.0
+ * Stable tag:        1.0.0
  * Requires at least: 5.0
  * Tested up to:      5.6
  * Requires PHP:      7.0
@@ -21,7 +21,7 @@
  * The Hello allso plugin main class.
  *
  * @author quickdesigner
- * @version 0.1.1
+ * @version 1.0.0
  */
 class Main
 {
@@ -62,7 +62,7 @@ class Main
 	 * @var string The plugin version.
 	 * @todo Set your plugin version number.
 	 */
-	const VERSION = '0.1.1';
+	const VERSION = '1.0.0';
 
 	/**
 	 * Only requirement constants > '0' will be checked.
