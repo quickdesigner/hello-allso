@@ -1,14 +1,14 @@
 <?php namespace peroks\plugin_customer\plugin_package;
 /*
  * Plugin Name:       Hello allso
- * Plugin URI:        https://github.com/peroks/wp-plugin-template
+ * Plugin URI:        https://github.com/quickdesigner/hello-allso
  * Description:       Say hello allso instead of hello dolly. Dummy plugin to test workflow local-> online
  *
  * Text Domain:       hello-allso
  * Domain Path:       /languages
  *
  * Author:            quickdesigner
- * Author URI:        https://codeable.io/developers/per-egil-roksvaag/
+ * Author URI:        https://wpquickdesigner.com
  *
  * Version:           0.1.0
  * Stable tag:        0.1.0
