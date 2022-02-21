@@ -114,7 +114,7 @@ class Modal
 			'type'      => 'button',
 			'class'     => array(),
 			'icon'      => '',
-			'text'      => __( 'Open', '[plugin-text-domain]' ),
+			'text'      => __( 'Open', 'hello-allso' ),
 		) );
 
 		$template = $args['type'];
@@ -139,7 +139,7 @@ class Modal
 	 */
 	public function container( $args = array(), $content = '', $shortcode = '' ) {
 		$this->index++;
-		$id = sprintf( Main::instance()->plugin_prefix( 'modal-container-%d', '-' ), $this->index );
+		$id = sprintf( Main::instance()->hello_allso( 'modal-container-%d', '-' ), $this->index );
 		$id = apply_filters( self::FILTER_MODAL_ID, $id, $this->index );
 
 		$args = array_change_key_case( $args );
@@ -278,7 +278,7 @@ class Modal
 			'header' => true,
 			'body'   => true,
 			'footer' => true,
-			'title'  => __( 'Title', '[plugin-text-domain]' ),
+			'title'  => __( 'Title', 'hello-allso' ),
 		) );
 
 		if ( $args['header'] ) {
@@ -293,7 +293,7 @@ class Modal
 		}
 
 		if ( $args['footer'] ) {
-			$text     = esc_html__( 'OK', '[plugin-text-domain]' );
+			$text     = esc_html__( 'OK', 'hello-allso' );
 			$default  = sprintf( '<button type="button" class="pure-modal-button">%s</button>', $text );
 			$buttons  = wp_kses_post( $args['buttons'] ?? $default );
 			$footer   = sprintf( '<div class="pure-modal-footer">%s</div>', $buttons );
@@ -324,7 +324,7 @@ class Modal
 			'header'  => true,
 			'body'    => true,
 			'footer'  => true,
-			'title'   => __( 'Title', '[plugin-text-domain]' ),
+			'title'   => __( 'Title', 'hello-allso' ),
 			'method'  => 'POST',
 			'action'  => home_url( $wp->request ),
 			'enctype' => 'multipart/form-data',
@@ -342,7 +342,7 @@ class Modal
 		}
 
 		if ( $args['footer'] ) {
-			$text     = esc_html__( 'Submit', '[plugin-text-domain]' );
+			$text     = esc_html__( 'Submit', 'hello-allso' );
 			$default  = sprintf( '<button type="submit" class="pure-modal-button">%s</button>', $text );
 			$buttons  = wp_kses_post( $args['buttons'] ?? $default );
 			$footer   = sprintf( '<div class="pure-modal-footer">%s</div>', $buttons );

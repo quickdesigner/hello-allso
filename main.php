@@ -1,10 +1,10 @@
 <?php namespace peroks\plugin_customer\plugin_package;
 /*
- * Plugin Name:       [This Plugin Name]
+ * Plugin Name:       Hello allso
  * Plugin URI:        https://github.com/peroks/wp-plugin-template
- * Description:       [This plugin description]
+ * Description:       Say hello allso instead of hello dolly. Dummy plugin to test workflow local-> online
  *
- * Text Domain:       [plugin-text-domain]
+ * Text Domain:       hello-allso
  * Domain Path:       /languages
  *
  * Author:            Per Egil Roksvaag
@@ -18,7 +18,7 @@
  */
 
 /**
- * The [This Plugin Name] plugin main class.
+ * The Hello allso plugin main class.
  *
  * @author Per Egil Roksvaag
  * @version 0.1.0
@@ -36,7 +36,7 @@ class Main
 	 * @var string The plugin name.
 	 * @todo Globally search and replace this with your own plugin name.
 	 */
-	const NAME = '[This Plugin Name]';
+	const NAME = 'Hello allso';
 
 	/**
 	 * Must be identical to "Domain Path" in the plugin header comment above.
@@ -45,7 +45,7 @@ class Main
 	 * @var string The plugin text domain (hyphen).
 	 * @todo Globally search and replace this with your own unique text domain
 	 */
-	const DOMAIN = '[plugin-text-domain]';
+	const DOMAIN = 'hello-allso';
 
 	/**
 	 * Should be similar to self::DOMAIN, only with underscores instead of hyphens.
@@ -54,7 +54,7 @@ class Main
 	 * @var string The plugin prefix (underscore).
 	 * @todo Replace this constant with your own unique plugin prefix.
 	 */
-	const PREFIX = 'plugin_prefix';
+	const PREFIX = 'hello_allso';
 
 	/**
 	 * Should contain the "Version" field in the plugin header comment above.
@@ -94,7 +94,7 @@ class Main
 	const FILTER_CLASS_CREATED = self::PREFIX . '_class_created';
 	const FILTER_CLASS_PATH    = self::PREFIX . '_class_path';
 	const FILTER_SYSTEM_CHECK  = self::PREFIX . '_system_check';
-	const FILTER_PLUGIN_PREFIX = self::PREFIX . '_plugin_prefix';
+	const FILTER_hello_allso = self::PREFIX . '_hello_allso';
 	const FILTER_PLUGIN_PATH   = self::PREFIX . '_plugin_path';
 	const FILTER_PLUGIN_URL    = self::PREFIX . '_plugin_url';
 
@@ -247,13 +247,13 @@ class Main
 			if ( is_admin() ) {
 
 				//	Error message
-				$message = __( '%1$s requires %2$s version %3$s or higher, the plugin is NOT RUNNING.', '[plugin-text-domain]' );
+				$message = __( '%1$s requires %2$s version %3$s or higher, the plugin is NOT RUNNING.', 'hello-allso' );
 				$message = sprintf( $message, self::NAME, $require, $version );
 
 				//	Admin notice output
 				$notice = function () use ( $message ) {
 					vprintf( '<div class="notice notice-error"><p><strong>%s: </strong>%s</p></div>', array(
-						esc_html__( 'Error', '[plugin-text-domain]' ),
+						esc_html__( 'Error', 'hello-allso' ),
 						esc_html( $message ),
 					) );
 				};
@@ -287,7 +287,7 @@ class Main
 
 			add_action( 'wp_loaded', 'flush_rewrite_rules' );
 			add_action( 'admin_notices', function () {
-				$notice = __( '%s has been updated to version %s', '[plugin-text-domain]' );
+				$notice = __( '%s has been updated to version %s', 'hello-allso' );
 				$notice = sprintf( $notice, self::NAME, self::VERSION );
 				printf( '<div class="notice notice-success is-dismissible"><p>%s.</p></div>', esc_html( $notice ) );
 				error_log( $notice );
@@ -319,7 +319,7 @@ class Main
 		if ( is_admin() && current_user_can( 'activate_plugins' ) ) {
 			do_action( self::ACTION_ACTIVATE, static::instance(), self::VERSION, get_option( self::OPTION_VERSION ) );
 			update_option( self::OPTION_VERSION, self::VERSION );
-			$message = __( '%s version %s has been activated', '[plugin-text-domain]' );
+			$message = __( '%s version %s has been activated', 'hello-allso' );
 			error_log( sprintf( $message, self::NAME, self::VERSION ) );
 			flush_rewrite_rules();
 		}
@@ -333,7 +333,7 @@ class Main
 	public static function deactivate() {
 		if ( is_admin() && current_user_can( 'activate_plugins' ) ) {
 			do_action( self::ACTION_DEACTIVATE, static::instance(), self::VERSION, get_option( self::OPTION_VERSION ) );
-			$message = __( '%s version %s has been deactivated', '[plugin-text-domain]' );
+			$message = __( '%s version %s has been deactivated', 'hello-allso' );
 			error_log( sprintf( $message, self::NAME, self::VERSION ) );
 			flush_rewrite_rules();
 		}
@@ -348,7 +348,7 @@ class Main
 		if ( is_admin() && current_user_can( 'delete_plugins' ) ) {
 			do_action( self::ACTION_DELETE, static::instance(), self::VERSION, get_option( self::OPTION_VERSION ) );
 			delete_option( self::OPTION_VERSION );
-			$message = __( '%s version %s has been removed', '[plugin-text-domain]' );
+			$message = __( '%s version %s has been removed', 'hello-allso' );
 			error_log( sprintf( $message, self::NAME, self::VERSION ) );
 			flush_rewrite_rules();
 		}
@@ -365,9 +365,9 @@ class Main
 	 * @param string $sep The prefix separator.
 	 * @return string The prefixed identifier.
 	 */
-	public function plugin_prefix( $name = '', $sep = '_' ) {
+	public function hello_allso( $name = '', $sep = '_' ) {
 		$result = str_replace( '_', $sep, self::PREFIX . $sep . $name );
-		return apply_filters( self::FILTER_PLUGIN_PREFIX, $result, $name, $sep );
+		return apply_filters( self::FILTER_hello_allso, $result, $name, $sep );
 	}
 
 	/**

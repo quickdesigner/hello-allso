@@ -75,7 +75,7 @@ class Download
 		if ( $parts = explode( '/', $plugin_file ) ) {
 			array_push( $actions, vsprintf( '<a href="%s" download>%s</a>', array(
 				esc_url( admin_url( sprintf( 'plugins.php?download-plugin=%s', $parts[0] ) ) ),
-				esc_html__( 'Download', '[plugin-text-domain]' ),
+				esc_html__( 'Download', 'hello-allso' ),
 			) ) );
 		}
 		return $actions;
@@ -250,9 +250,9 @@ class Download
 		Admin::instance()->add_section( array(
 			'section'     => self::SECTION_DOWNLOAD,
 			'page'        => Admin::PAGE,
-			'label'       => __( 'Theme and plugin downloads', '[plugin-text-domain]' ),
+			'label'       => __( 'Theme and plugin downloads', 'hello-allso' ),
 			'description' => vsprintf( '<p>%s</p>', array(
-				esc_html__( 'Check the below checkboxes to allow downloads of themes and/or plugins.', '[plugin-text-domain]' ),
+				esc_html__( 'Check the below checkboxes to allow downloads of themes and/or plugins.', 'hello-allso' ),
 			) ),
 		) );
 
@@ -261,8 +261,8 @@ class Download
 			'option'      => self::OPTION_DOWNLOAD_THEMES,
 			'section'     => self::SECTION_DOWNLOAD,
 			'page'        => Admin::PAGE,
-			'label'       => __( 'Enable theme downloads', '[plugin-text-domain]' ),
-			'description' => __( 'Check to enable download of themes from the dashboard.', '[plugin-text-domain]' ),
+			'label'       => __( 'Enable theme downloads', 'hello-allso' ),
+			'description' => __( 'Check to enable download of themes from the dashboard.', 'hello-allso' ),
 		) );
 
 		//	Download plugins
@@ -270,8 +270,8 @@ class Download
 			'option'      => self::OPTION_DOWNLOAD_PLUGINS,
 			'section'     => self::SECTION_DOWNLOAD,
 			'page'        => Admin::PAGE,
-			'label'       => __( 'Enable plugin downloads', '[plugin-text-domain]' ),
-			'description' => __( 'Check to enable download of plugins from the dashboard.', '[plugin-text-domain]' ),
+			'label'       => __( 'Enable plugin downloads', 'hello-allso' ),
+			'description' => __( 'Check to enable download of plugins from the dashboard.', 'hello-allso' ),
 		) );
 	}
 

@@ -52,7 +52,7 @@ class Admin
 	 * Adds a top level page to the admin menu.
 	 */
 	public function admin_top_menu() {
-		$title = __( '[This Plugin Name] settings', '[plugin-text-domain]' );
+		$title = __( 'Hello allso settings', 'hello-allso' );
 		$page  = add_menu_page(
 			$title,									//	Page title
 			Main::NAME,								//	Menu title
@@ -69,7 +69,7 @@ class Admin
 	 * Adds a submenu page to the admin menu.
 	 */
 	public function admin_sub_menu() {
-		$title = __( '[This Plugin Name] settings', '[plugin-text-domain]' );
+		$title = __( 'Hello allso settings', 'hello-allso' );
 		$page  = add_submenu_page(
 			'options-general.php',					//	Parent page slug
 			$title,									//	Page title
@@ -93,7 +93,7 @@ class Admin
 		if ( plugin_basename( Main::FILE ) === $file ) {
 			$links[] = vsprintf( '<a href="%s" target="_blank">%s</a>', array(
 				esc_url( 'https://codeable.io/developers/per-egil-roksvaag/' ),
-				esc_html__( 'Support', '[plugin-text-domain]' ),
+				esc_html__( 'Support', 'hello-allso' ),
 			) );
 		}
 		return $links;
@@ -108,7 +108,7 @@ class Admin
 	public function plugin_action_links( $actions ) {
 		array_unshift( $actions, vsprintf( '<a href="%s">%s</a>', array(
 			esc_url( menu_page_url( self::PAGE, false ) ),
-			esc_html__( 'Settings', '[plugin-text-domain]' ),
+			esc_html__( 'Settings', 'hello-allso' ),
 		) ) );
 		return $actions;
 	}
@@ -150,10 +150,10 @@ class Admin
 		$this->add_section( array(
 			'section'     => self::SECTION_DELETE,
 			'page'        => self::PAGE,
-			'label'       => __( 'DANGER ZONE!', '[plugin-text-domain]' ),
+			'label'       => __( 'DANGER ZONE!', 'hello-allso' ),
 			'description' => vsprintf( '<p>%s %s</p>', array(
-				esc_html__( 'Check the below checkbox to also delete all plugin data and settings when this plugin is deleted.', '[plugin-text-domain]' ),
-				esc_html__( 'Only do this if you do not intend to use this plugin again, all your data and settings will be lost.', '[plugin-text-domain]' ),
+				esc_html__( 'Check the below checkbox to also delete all plugin data and settings when this plugin is deleted.', 'hello-allso' ),
+				esc_html__( 'Only do this if you do not intend to use this plugin again, all your data and settings will be lost.', 'hello-allso' ),
 			) ),
 		) );
 
@@ -162,8 +162,8 @@ class Admin
 			'option'      => self::OPTION_DELETE_SETTINGS,
 			'section'     => self::SECTION_DELETE,
 			'page'        => self::PAGE,
-			'label'       => __( 'Also delete plugin data', '[plugin-text-domain]' ),
-			'description' => __( 'Check to also delete all plugin data and settings when deleting this plugin.', '[plugin-text-domain]' ),
+			'label'       => __( 'Also delete plugin data', 'hello-allso' ),
+			'description' => __( 'Check to also delete all plugin data and settings when deleting this plugin.', 'hello-allso' ),
 		) );
 	}
 

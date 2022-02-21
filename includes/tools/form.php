@@ -302,7 +302,7 @@ class Form
 	public function button( array $attr = array() ) {
 		$attr = wp_parse_args( $attr, array(
 			'type'  => 'button',
-			'value' => __( 'Submit', '[plugin-text-domain]' ),
+			'value' => __( 'Submit', 'hello-allso' ),
 		) );
 
 		$output[] = vsprintf( '<button class="peroks-form-control"%s>%s</button>', array(
